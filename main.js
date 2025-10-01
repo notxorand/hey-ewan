@@ -138,15 +138,14 @@ document.addEventListener("DOMContentLoaded", () => {
     docker: "https://www.docker.com/",
     linux: "https://www.linux.org/",
     postgresql: "https://www.postgresql.org/",
-    drizzle: "https://www.drizzle.org/",
-    mongodb: "https://www.mongodb.com/",
-    github: "https://github.com/lordewans",
+    nix: "https://nixos.org/",
+    nvim: "https://neovim.io/",
+    github: "https://github.com/hey-ewan",
     likedin: "https://linkedin.com/in/ewanretorokugbe",
-    twitter: "https://x.com/ewanretorokugbe",
-    linktree: "https://linktr.ee/lordewan",
-    caldotcom: "https://cal.com/ewanretor-giwa-okugbe-u0xylh",
-    email: "mailto:hey@lordewan.xyz",
-    telegram: "https://t.me/lordewan"
+    twitter: "https://x.com/hey_ewan",
+    caldotcom: "https://cal.com/ewanretor",
+    email: "mailto:ewanretorokugbe@gmail.com",
+    telegram: "https://t.me/lordewan",
   };
 
   buttons.forEach((button) => {

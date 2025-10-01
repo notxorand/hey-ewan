@@ -1,234 +1,469 @@
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/ico" href="favicon.ico">
-	<link rel="stylesheet" href="styles.css">
-	<title>lord ewan (Σ, ∆)</title>
-	<script src="main.js"></script>
-	<script type="module" src="components.js"></script>
-</head>
-<body>
-	<div class="container">
-		<nav>
-			<button id="home" class="btn3 nav" data-tooltip="Go Home"><img src="./img/svgs/home.svg"
-					alt="Home Icon"></button>
-			<button id="about" class="btn2 nav" data-tooltip="About Me"><img src="img/svgs/user.svg"
-					alt="About Icon"></button>
-			<button id="portfolio" class="btn3 nav" data-tooltip="Portfolio"><img src="img/svgs/code.svg"
-					alt="Portfolio Icon"></button>
-			<button id="contact" class="btn2 nav" data-tooltip="Contact Me"><img src="img/svgs/at-sign.svg"
-					alt="Contact Icon"></button>
-		</nav>
-		<div id="main" class="main">
-			<section id="home" class="home" style="height: 100%; width: 100%;">
-				<h1>hey there, I'm Ewanretor /ewanretə(r)/</h1>
-				<h3>a software engineer, founder and indie hacker</h3>
-				<div style="display: flex; align-items: center; justify-content: start; margin-bottom: 8px;">
-					<button onclick="window.open('https://cal.com/ewanretor-giwa-okugbe-u0xylh', '_blank')" id="btn0"
-						class="btn0">Book Meeting</button>
-					<button onclick="window.open('mailto:hey@lordewan.com', '_self')" id="btn1"
-						class="btn1">Email</button>
-				</div>
-				<p>Press the Enter key to <span class="ib">Book a Meeting</span> or hold the Shift key alongside Enter
-					to
-					<span class="ib">Email</span>.
-				</p>
-			</section>
-			<section id="about" style="min-height: 50%; width: 100%; margin-bottom: 48px;">
-				<div id="alphabets"></div>
-				<p>Press any of the keys to toggle the corresponding <span class="ib">Button</span>.</p>
-				<h2>Who am I?</h2>
-				<p>I'm a Nigerian, with an <span class="ib">enterpreneural</span> and <span class="ib">innovative</span>
-					spirit. I was born Ewanretor Giwa-Okugbe on the 13th of Feburary, 2006.</p>
-				<p>I got into software development in 2019, months before the pandemic, and progressively gained
-					mastery of <span class="ib">JavaScript</span>, among other technologies:
-				</p>
-				</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/ico" href="favicon.ico" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>ewan</title>
+        <script src="main.js"></script>
+        <script type="module" src="components.js"></script>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <button id="home" class="btn3 nav" data-tooltip="Go Home">
+                    <img src="./img/svgs/home.svg" alt="Home Icon" />
+                </button>
+                <button id="about" class="btn2 nav" data-tooltip="About Me">
+                    <img src="img/svgs/user.svg" alt="About Icon" />
+                </button>
+                <button
+                    id="portfolio"
+                    class="btn3 nav"
+                    data-tooltip="Portfolio"
+                >
+                    <img src="img/svgs/code.svg" alt="Portfolio Icon" />
+                </button>
+                <button id="contact" class="btn2 nav" data-tooltip="Contact Me">
+                    <img src="img/svgs/at-sign.svg" alt="Contact Icon" />
+                </button>
+            </nav>
+            <div id="main" class="main">
+                <section
+                    id="home"
+                    class="home"
+                    style="height: 100%; width: 100%"
+                >
+                    <h1>hey there, I'm Ewanretor /ewanretə(r)/</h1>
+                    <h3>
+                        a mechatronics student who writes rust and uses nix for
+                        ci
+                    </h3>
+                    <div
+                        style="
+                            display: flex;
+                            align-items: center;
+                            justify-content: start;
+                            margin-bottom: 8px;
+                        "
+                    >
+                        <button
+                            onclick="window.open('https://cal.com/ewanretor', '_blank')"
+                            id="btn0"
+                            class="btn0"
+                        >
+                            Book Meeting
+                        </button>
+                        <button
+                            onclick="window.open('mailto:ewanretorokugbe@gmail.com', '_self')"
+                            id="btn1"
+                            class="btn1"
+                        >
+                            Email
+                        </button>
+                    </div>
+                    <p>
+                        Press the Enter key to
+                        <span class="ib">Book a Meeting</span> or hold the Shift
+                        key alongside Enter to <span class="ib">Email</span>.
+                    </p>
+                </section>
+                <section
+                    id="about"
+                    style="min-height: 50%; width: 100%; margin-bottom: 48px"
+                >
+                    <div id="alphabets"></div>
+                    <p>
+                        Press any of the keys to toggle the corresponding
+                        <span class="ib">Button</span>.
+                    </p>
+                    <h2>Welcome to my messy little corner.</h2>
+                    <p>
+                        I'm a Nigerian, who likes to try
+                        <span class="ib">fun</span> and
+                        <span class="ib">innovative</span> things. I was born
+                        Ewanretor Giwa-Okugbe on the 13th of Feburary, 2006.
+                    </p>
+                    <p>
+                        I got psyoped into learning JavaScript in 2020, and then
+                        Go in 2022, but have since opened my eyes to the truth
+                        of <span class="ib">Rust</span>, which sums my
+                        experience to this (*crazy how this my entire self
+                        worth):
+                    </p>
 
-				<div class="skills">
-					<div class="carousel">
-						<div class="carousel-track0">
-							<button class="btn1" data-tooltip="HTML5"><img src="img/svgs/html5.svg" height="24px"
-									width="24px" alt="html"></button>
-							<button class="btn1" data-tooltip="CSS3"><img src="img/svgs/css3.svg" height="24px"
-									width="24px" alt="css"></button>
-							<button class="btn1" data-tooltip="Tailwind CSS"><img src="img/svgs/tailwindcss.svg"
-									height="24px" width="24px" alt="tailwindcss"></button>
-							<button class="btn1" data-tooltip="TypeScript"><img src="img/svgs/typescript.svg"
-									height="24px" width="24px" alt="ts"></button>
-							<button class="btn1" data-tooltip="Next.js"><img src="img/svgs/nextdotjs.svg" height="24px"
-									width="24px" alt="nextjs"></button>
-							<button class="btn1" data-tooltip="Nuxt.js"><img src="img/svgs/nuxtdotjs.svg" height="24px"
-									width="24px" alt="nuxtjs"></button>
-							<button class="btn1" data-tooltip="Go"><img src="img/svgs/go.svg" height="24px" width="24px"
-									alt="go"></button>
-							<button class="btn1" data-tooltip="Docker"><img src="img/svgs/docker.svg" height="24px"
-									width="24px" alt="docker"></button>
-							<button class="btn1" data-tooltip="Linux"><img src="img/svgs/linux.svg" height="24px"
-									width="24px" alt="linux"></button>
-							<button class="btn1" data-tooltip="PostgreSQL"><img src="img/svgs/postgresql.svg"
-									height="24px" width="24px" alt="postgresql"></button>
-							<button class="btn1" data-tooltip="Drizzle ORM"><img src="img/svgs/drizzle.svg"
-									height="24px" width="24px" alt="drizzle"></button>
-							<button class="btn1" data-tooltip="MongoDB"><img src="img/svgs/mongodb.svg" height="24px"
-									width="24px" alt="mongodb"></button>
-						</div>
-						<div class="carousel-track1">
-							<button class="btn1" data-tooltip="HTML5"><img src="img/svgs/html5.svg" height="24px"
-									width="24px" alt="html"></button>
-							<button class="btn1" data-tooltip="CSS3"><img src="img/svgs/css3.svg" height="24px"
-									width="24px" alt="css"></button>
-							<button class="btn1" data-tooltip="Tailwind CSS"><img src="img/svgs/tailwindcss.svg"
-									height="24px" width="24px" alt="tailwindcss"></button>
-							<button class="btn1" data-tooltip="TypeScript"><img src="img/svgs/typescript.svg"
-									height="24px" width="24px" alt="ts"></button>
-							<button class="btn1" data-tooltip="Next.js"><img src="img/svgs/nextdotjs.svg" height="24px"
-									width="24px" alt="nextjs"></button>
-							<button class="btn1" data-tooltip="Nuxt.js"><img src="img/svgs/nuxtdotjs.svg" height="24px"
-									width="24px" alt="nuxtjs"></button>
-							<button class="btn1" data-tooltip="Go"><img src="img/svgs/go.svg" height="24px" width="24px"
-									alt="go"></button>
-							<button class="btn1" data-tooltip="Docker"><img src="img/svgs/docker.svg" height="24px"
-									width="24px" alt="docker"></button>
-							<button class="btn1" data-tooltip="Linux"><img src="img/svgs/linux.svg" height="24px"
-									width="24px" alt="linux"></button>
-							<button class="btn1" data-tooltip="PostgreSQL"><img src="img/svgs/postgresql.svg"
-									height="24px" width="24px" alt="postgresql"></button>
-							<button class="btn1" data-tooltip="Drizzle ORM"><img src="img/svgs/drizzle.svg"
-									height="24px" width="24px" alt="drizzle"></button>
-							<button class="btn1" data-tooltip="MongoDB"><img src="img/svgs/mongodb.svg" height="24px"
-									width="24px" alt="mongodb"></button>
-						</div>
-					</div>
-				</div>
+                    <div class="skills">
+                        <div class="carousel">
+                            <div class="carousel-track0">
+                                <button
+                                    class="btn1"
+                                    data-tooltip="HTML5 (of course)"
+                                >
+                                    <img
+                                        src="img/svgs/html5.svg"
+                                        height="24px"
+                                        width="24px"
+                                        alt="html"
+                                    />
+                                </button>
+                                <button class="btn1" data-tooltip="CSS3">
+                                    <img
+                                        src="img/svgs/css3.svg"
+                                        height="24px"
+                                        width="24px"
+                                        alt="css"
+                                    />
+                                </button>
+                                <button
+                                    class="btn1"
+                                    data-tooltip="Tailwind CSS"
+                                >
+                                    <img
+                                        src="img/svgs/tailwindcss.svg"
+                                        height="24px"
+                                        width="24px"
+                                        alt="tailwindcss"
+                                    />
+                                </button>
+                                <button class="btn1" data-tooltip="TypeScript">
+                                    <img
+                                        src="img/svgs/typescript.svg"
+                                        height="24px"
+                                        width="24px"
+                                        alt="ts"
+                                    />
+                                </button>
+                                <button class="btn1" data-tooltip="Next.js">
+                                    <img
+                                        src="img/svgs/nextdotjs.svg"
+                                        height="24px"
+                                        width="24px"
+                                        alt="nextjs"
+                                    />
+                                </button>
+                                <button class="btn1" data-tooltip="Nuxt.js">
+                                    <img
+                                        src="img/svgs/nuxtdotjs.svg"
+                                        height="24px"
+                                        width="24px"
+                                        alt="nuxtjs"
+                                    />
+                                </button>
+                                <button class="btn1" data-tooltip="Go">
+                                    <img
+                                        src="img/svgs/go.svg"
+                                        height="24px"
+                                        width="24px"
+                                        alt="go"
+                                    />
+                                </button>
+                                <button class="btn1" data-tooltip="Rust">
+                                    <img
+                                        src="img/svgs/rust.svg"
+                                        height="24px"
+                                        width="24px"
+                                        alt="rust"
+                                    />
+                                </button>
+                                <button class="btn1" data-tooltip="Docker">
+                                    <img
+                                        src="img/svgs/docker.svg"
+                                        height="24px"
+                                        width="24px"
+                                        alt="docker"
+                                    />
+                                </button>
+                                <button class="btn1" data-tooltip="Linux">
+                                    <img
+                                        src="img/svgs/linux.svg"
+                                        height="24px"
+                                        width="24px"
+                                        alt="linux"
+                                    />
+                                </button>
+                                <button class="btn1" data-tooltip="PostgreSQL">
+                                    <img
+                                        src="img/svgs/postgresql.svg"
+                                        height="24px"
+                                        width="24px"
+                                        alt="postgresql"
+                                    />
+                                </button>
+                                <button class="btn1" data-tooltip="Nix(OS)">
+                                    <img
+                                        src="img/svgs/nix.svg"
+                                        height="24px"
+                                        width="24px"
+                                        alt="Nix"
+                                    />
+                                </button>
+                                <button class="btn1" data-tooltip="Neovim">
+                                    <img
+                                        src="img/svgs/nvim.svg"
+                                        height="24px"
+                                        width="24px"
+                                        alt="nvim"
+                                    />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
-				<p>
-					My primary focus is running <a href="https://0xzero.org" target="_blank" rel="noreferrer">ZERO
-						Labs</a>, where we
-					develop self-sovereign identity solutions. Additionally, I am co-founding a startup dedicated to
-					making learning more dynamic and accessible.
-				</p>
-				<p>Professionally, I've had the privilege of working at <a href="https://thena.fi">Thena</a> as a
-					contract engineer. You can find out more about my professional experience @ my <a
-						href="/CV (Resume)/CV (Resume).pdf" target="_blank" download="Ewanretor-CV-(Resume).pdf">CV
-						(Resume)</a>.</p>
-			</section>
-			<section id="portfolio" style="min-height: 50%; width: 100%; margin-bottom: 48px;">
-				<h2>Portfolio</h2>
-				<p>I've worked on numerous projects, and while most were undocumented, here are a few of them:</p>
-				<div class="projects-parent">
-					<div class="projects">
-						<div class="project-box">
-							<h3 id="project-name">lord ewan (Σ, ∆)</h3>
-							<a href="https://lordewan.xyz" target="_blank" id="project-link">https://lordewan.xyz</a>
-							<p id="project-description">
-								This is a personal website I decided to build. It was built with vanilla web
-								technologies and zero frameworks. And is designed to be server rendered using Node.js
-								and hosted via Docker.
-								<iframe src="https://lordewan.xyz" width="320" height="320"
-									style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"
-									class="iframe-box2"></iframe>
-							</p>
-							<div class="project-tech">
-								<button class="btn1" data-tooltip="HTML5"><img src="img/svgs/html5.svg" height="24px"
-										width="24px" alt="html"></button>
-								<button class="btn1" data-tooltip="CSS3"><img src="img/svgs/css3.svg" height="24px"
-										width="24px" alt="css"></button>
-								<button class="btn1" data-tooltip="Docker"><img src="img/svgs/docker.svg" height="24px"
-										width="24px" alt="docker"></button>
-							</div>
-						</div>
-						<div class="project-box">
-							<h3 id="project-name">Cast Quest</h3>
-							<a href="https://castquest.lordewan.xyz" target="_blank" id="project-link">https://castquest.lordewan.xyz</a>
-							<p id="project-description">
-								Cast Quest is an engaging Farcaster based application designed for friends to challenge
-								one another by
-								betting on a variety of activities.
-								<iframe src="https://castquest.lordewan.xyz" width="320" height="320"
-									style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"
-									class="iframe-box2"></iframe>
-							</p>
-							<div class="project-tech">
-								<button class="btn1" data-tooltip="Next.js"><img src="img/svgs/nextdotjs.svg"
-										height="24px" width="24px" alt="nextjs"></button>
-								<button class="btn1" data-tooltip="TypeScript"><img src="img/svgs/typescript.svg"
-										height="24px" width="24px" alt="ts"></button>
-								<button class="btn1" data-tooltip="Tailwind CSS"><img src="img/svgs/tailwindcss.svg"
-										height="24px" width="24px" alt="tailwindcss"></button>
-							</div>
-						</div>
-						<div class="project-box">
-							<h3 id="project-name">ZERO Prototype</h3>
-							<a href="https://demo.0xzero.org" target="_blank" id="project-link">https://demo.0xzero.org</a>
-							<p id="project-description">
-								This is a simple project used as a proof of concept for what we intend to achieve with
-								ZERO Protocol @ ZERO Labs.
-								<iframe src="https://demo.0xzero.org" width="320" height="320"
-									style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"
-									class="iframe-box2"></iframe>
-							</p>
-							<div class="project-tech">
-								<button class="btn1" data-tooltip="Nuxt.js"><img src="img/svgs/nuxtdotjs.svg"
-										height="24px" width="24px" alt="nuxtjs"></button>
-								<button class="btn1" data-tooltip="TypeScript"><img src="img/svgs/typescript.svg"
-										height="24px" width="24px" alt="ts"></button>
-								<button class="btn1" data-tooltip="Tailwind CSS"><img src="img/svgs/tailwindcss.svg"
-										height="24px" width="24px" alt="tailwindcss"></button>
-							</div>
-						</div>
-						<div class="project-box">
-							<h3 id="project-name">Prototype PoW Chain</h3>
-							<a href="https://github.com/lordewans/smart-chain"
-								target="_blank" id="project-link">https://github.com/lordewans/smart-chain</a>
-							<p id="project-description">
-								<span>
-									While trying to understand how blockchains work, I built a very barebones PoW
-									blockchain powered by <a href="https://dgraph.io/docs/badger/">Badger DB</a>.
-								</span>
-								<iframe src="https://github.com/lordewans/smart-chain" width="320" height="320"
-									style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"
-									class="iframe-box2"></iframe>
-							</p>
-							<div class="project-tech">
-								<button class="btn1" data-tooltip="Go"><img src="img/svgs/go.svg" height="24px"
-										width="24px" alt="go"></button>
-								<button class="btn1" data-tooltip="Docker"><img src="img/svgs/docker.svg" height="24px"
-										width="24px" alt="docker"></button>
-								<button class="btn1" data-tooltip="Linux"><img src="img/svgs/linux.svg" height="24px"
-										width="24px" alt="linux"></button>
-							</div>
-						</div>
-						<button class="show-prev btn2"><img src="img/svgs/chevron-left.svg" alt="<"></button>
-						<button class="show-next btn2"><img src="img/svgs/chevron-right.svg" alt=">"></button>
-					</div>
-				</div>
-			</section>
-			<section id="contact" style="min-height: 50%; width: 100%;">
-				<h2>Contact Me</h2>
-				<iframe src="https://lordewan.substack.com/embed" width="480" height="320"
-					style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"
-					class="iframe-box"></iframe>
-
-			</section>
-			<div class="contact" style="padding-bottom: 32px;">
-				<button class="btn3" data-tooltip="Github"><img src="img/svgs/github.svg" height="24px" width="24px"
-						alt="github"></button>
-				<button class="btn3" data-tooltip="LinkedIn"><img src="img/svgs/linkedin.svg" height="24px" width="24px"
-						alt="linkedin"></button>
-				<button class="btn3" data-tooltip="Twitter"><img src="img/svgs/twitter.svg" height="24px" width="24px"
-						alt="twitter"></button>
-				<button class="btn3" data-tooltip="Linktree"><img src="img/svgs/link.svg" height="24px" width="24px"
-						alt="linktree"></button>
-				<button class="btn3" data-tooltip="Cal.com"><img src="img/svgs/calendar.svg" height="24px" width="24px"
-						alt="caldotcom"></button>
-				<button class="btn3" data-tooltip="Email"><img src="img/svgs/mail.svg" height="24px" width="24px"
-						alt="email"></button>
-				<button class="btn3" data-tooltip="Telegram"><img src="img/svgs/send.svg" height="24px" width="24px"
-						alt="telegram"></button>
-			</div>
-		</div>
-	</div>
-</body>
+                    <p>
+                        Currently, I try to convince myself I work on important
+                        low-level systems such as
+                        <a
+                            href="https://github.com/s3ndotxyz"
+                            target="_blank"
+                            rel="noreferrer"
+                            >S3N</a
+                        >
+                        (don't ask me what the abbreviation stands for).
+                    </p>
+                    <p>
+                        In two weeks I worked on a project that was estimated to
+                        be a month long (don't tell LinedIn folks) at
+                        <a href="https://thena.fi">Thena</a> on a contract.
+                        After that, I wasted my time trying to build some bs
+                        crypto identity infra. Got that time back working on a
+                        few other less-bs stuff like The Forge (my ADHD got to
+                        me before I could make this one commercial).
+                    </p>
+                </section>
+                <section
+                    id="portfolio"
+                    style="min-height: 50%; width: 100%; margin-bottom: 48px"
+                >
+                    <h2>Contributions</h2>
+                    <p>
+                        I don't keep track of my projects well (like the current
+                        state of my friendships), neither do I feel the need to
+                        lie in a CV anymore. *correcting a typo in a readme
+                        counts.
+                    </p>
+                    <div class="projects-parent">
+                        <div class="projects">
+                            <div class="project-box">
+                                <h3 id="project-name">this site</h3>
+                                <a
+                                    href="https://github.com/hey-ewan"
+                                    target="_blank"
+                                    id="project-link"
+                                    >https://github.com/hey-ewan</a
+                                >
+                                <p id="project-description">
+                                    Just woke up one day and decided to raw-dog
+                                    HTML, CSS, and JS. I mean, why not. Then as
+                                    every developer does, I overengineered it by
+                                    serving it with Node.js and containerising
+                                    it with Docker. Btw, I kinda hate yellow
+                                    (and light themes), is why I used it. It
+                                    makes me uneasy, which is kinda the point,
+                                    really.
+                                </p>
+                                <div class="project-tech">
+                                    <button class="btn1" data-tooltip="HTML5">
+                                        <img
+                                            src="img/svgs/html5.svg"
+                                            height="24px"
+                                            width="24px"
+                                            alt="html"
+                                        />
+                                    </button>
+                                    <button class="btn1" data-tooltip="CSS3">
+                                        <img
+                                            src="img/svgs/css3.svg"
+                                            height="24px"
+                                            width="24px"
+                                            alt="css"
+                                        />
+                                    </button>
+                                    <button class="btn1" data-tooltip="Docker">
+                                        <img
+                                            src="img/svgs/docker.svg"
+                                            height="24px"
+                                            width="24px"
+                                            alt="docker"
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-box">
+                                <h3 id="project-name">the forge</h3>
+                                <a
+                                    href="https://github.com/0xzerolabs/the-forge"
+                                    target="_blank"
+                                    id="project-link"
+                                    >https://github.com/0xzerolabs/the-forge</a
+                                >
+                                <p id="project-description">
+                                    Although I had big plans for this (big
+                                    plans, I tell you), it served more as a way
+                                    for me to learn rust. It was built on the
+                                    promise of tokenising intellectual property
+                                    on Story Protocol. Jokes on me, ig.
+                                </p>
+                                <div class="project-tech">
+                                    <button class="btn1" data-tooltip="Rust">
+                                        <img
+                                            src="img/svgs/rust.svg"
+                                            height="24px"
+                                            width="24px"
+                                            alt="rust"
+                                        />
+                                    </button>
+                                    <button class="btn1" data-tooltip="Go">
+                                        <img
+                                            src="img/svgs/go.svg"
+                                            height="24px"
+                                            width="24px"
+                                            alt="go"
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-box">
+                                <h3 id="project-name">Hyli</h3>
+                                <a
+                                    href="https://github.com/hyli/hyli"
+                                    target="_blank"
+                                    id="project-link"
+                                    >https://github.com/hyli/hyli</a
+                                >
+                                <p id="project-description">
+                                    What better way to improve with rust than
+                                    working with an existing project. Honestly,
+                                    this felt more like an internship than me
+                                    doing any important thing. They basically
+                                    held my hands here. The Hyli team are the
+                                    nicest.
+                                </p>
+                                <div class="project-tech">
+                                    <button class="btn1" data-tooltip="Rust">
+                                        <img
+                                            src="img/svgs/rust.svg"
+                                            height="24px"
+                                            width="24px"
+                                            alt="rust"
+                                        />
+                                    </button>
+                                    <button class="btn1" data-tooltip="Docker">
+                                        <img
+                                            src="img/svgs/docker.svg"
+                                            height="24px"
+                                            width="24px"
+                                            alt="docker"
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="project-box">
+                                <h3 id="project-name">sway</h3>
+                                <a
+                                    href="https://github.com/FuelLabs/sway/"
+                                    target="_blank"
+                                    id="project-link"
+                                    >https://github.com/FuelLabs/sway</a
+                                >
+                                <p id="project-description">
+                                    <span>
+                                        Well, I worked on one issue during one
+                                        of OD Hack's events (this was for
+                                        money). Tbh, it felt more like undoing a
+                                        restriction the Fuel Labs team
+                                        self-imposed in the past. None the less,
+                                        I got my pay (fairly quickly) and after
+                                        a long time, we got the changes merged.
+                                    </span>
+                                </p>
+                                <div class="project-tech">
+                                    <button class="btn1" data-tooltip="Rust">
+                                        <img
+                                            src="img/svgs/rust.svg"
+                                            height="24px"
+                                            width="24px"
+                                            alt="rust"
+                                        />
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="show-prev btn2">
+                                <img src="img/svgs/chevron-left.svg" alt="<" />
+                            </button>
+                            <button class="show-next btn2">
+                                <img src="img/svgs/chevron-right.svg" alt=">" />
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact" style="min-height: 50%; width: 100%">
+                    <h2>There you go, me!</h2>
+                    <iframe
+                        src="https://lordewan.substack.com/embed"
+                        width="480"
+                        height="320"
+                        style="border: 1px solid #eee; background: white"
+                        frameborder="0"
+                        scrolling="no"
+                        class="iframe-box"
+                    ></iframe>
+                </section>
+                <div class="contact" style="padding-bottom: 32px">
+                    <button class="btn3" data-tooltip="Github">
+                        <img
+                            src="img/svgs/github.svg"
+                            height="24px"
+                            width="24px"
+                            alt="github"
+                        />
+                    </button>
+                    <button class="btn3" data-tooltip="LinkedIn">
+                        <img
+                            src="img/svgs/linkedin.svg"
+                            height="24px"
+                            width="24px"
+                            alt="linkedin"
+                        />
+                    </button>
+                    <button class="btn3" data-tooltip="Twitter">
+                        <img
+                            src="img/svgs/twitter.svg"
+                            height="24px"
+                            width="24px"
+                            alt="twitter"
+                        />
+                    </button>
+                    <button class="btn3" data-tooltip="Cal.com">
+                        <img
+                            src="img/svgs/calendar.svg"
+                            height="24px"
+                            width="24px"
+                            alt="caldotcom"
+                        />
+                    </button>
+                    <button class="btn3" data-tooltip="Email">
+                        <img
+                            src="img/svgs/mail.svg"
+                            height="24px"
+                            width="24px"
+                            alt="email"
+                        />
+                    </button>
+                    <button class="btn3" data-tooltip="Telegram">
+                        <img
+                            src="img/svgs/send.svg"
+                            height="24px"
+                            width="24px"
+                            alt="telegram"
+                        />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
